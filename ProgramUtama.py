@@ -8,7 +8,7 @@ UPLOAD_FOLDER = 'static/uploads/'
 
 def GAC():
     Img = cv2.imread('static/uploads/upload.jpg', 0)
-    max_its = 10
+    max_its = 300
 
     # Segmentasi paru-paru kanan
     init_mask_kanan = np.zeros((256, 256))

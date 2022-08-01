@@ -1,6 +1,4 @@
 import numpy as np
-import cv2
-import pandas as pd
 from scipy import ndimage
 
 def LungSegmentation(Img, init_mask, max_its, alpha):
