@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import LungSegmentation as Segmentation
+import Validasi as vd
 import os
 import shutil
 
@@ -23,3 +24,8 @@ def GAC():
     # Hasil segmentasi
     Result = ParuKanan + ParuKiri
     cv2.imwrite('static/uploads/result.jpg', Result)
+
+    # Mendapatkan Nilai Akurasi
+    ImageTest = cv2.imread('static/uploads/result.jpg', 0)
+    akurasi = vd.validate(ImageTest)
+    print('Akurasi = '+akurasi)
