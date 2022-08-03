@@ -31,8 +31,9 @@ def delete_files():
 
 @app.route('/')
 def home():
-    delete_files()
-    return render_template('index.html')
+    return 'fuck'
+    # delete_files()
+    # return render_template('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_image():
