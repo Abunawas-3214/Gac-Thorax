@@ -1,8 +1,6 @@
 from flask import  Flask, flash, request, redirect, url_for, render_template
-import urllib.request
 import os
 import shutil
-from werkzeug.utils import secure_filename
 import ProgramUtama
 
 app = Flask(__name__)
